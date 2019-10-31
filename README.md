@@ -15,17 +15,15 @@ Package ini dapat membantumu untuk mengoneksikan lebih dari satu Facebook Page k
 ## Requirements
 
 - Akun Facebook Page (tentu saja!)
-
 - Akun Qiscus Multichannel
-
 - Akun Heroku
 
   
 
 ## Instalasi
 
-- Clone repository ini dengan command `git clone git@bitbucket.org:qiscus/fb-custom-channel.git`
-- Pindah ke directory fb-custom-channel. `cd fb-custom-channel`
+- Clone repository ini dengan command `git clone git@bitbucket.org:qiscus/custom-channel-multichannel.git`
+- Pindah ke directory fb-custom-channel. `cd custom-channel-multichannel`
 - Create new heroku app. `heroku create your-app-name`
 - Buat custom channel Qiscus Multichannel baru. [Link](https://multichannel.qiscus.com/integration)
   - Nama channel bisa sesuai dengan yang kamu suka
@@ -39,5 +37,5 @@ Package ini dapat membantumu untuk mengoneksikan lebih dari satu Facebook Page k
   - heroku config:set FLASK_APP=app.py
   - heroku config:set FLASK_ENV=production
   - heroku config:set QISMO_APP_ID=[your-multichannel-app-id](https://multichannel.qiscus.com/settings#information)
-  - heroku config:set QISMO_BASE_URL=https://multichannel.qiscus.com
+  - heroku config:set QISMO_BASE_URL=https://qismo-stag.qiscus.com
   - heroku config:set QISMO_IDENTIFIER_KEY=your-custom-channel-identifier-key
